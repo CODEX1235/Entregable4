@@ -1,0 +1,31 @@
+producto = []
+
+producto1 = [1, "Cocacola", "1200", 200, "01010101"]
+producto2 = [2, "Pepsi", "1500", 300, "0202020"]
+producto3 = [3, "Manzana", "1700", 250, "0303030303"]
+producto4 = [4, "SpeedMax", "2000", 180, "04040404040"]
+producto5 = [5, "Vive100", "2100", 250, "050505050"]
+
+producto.append(producto1)
+producto.append(producto2)
+producto.append(producto3)
+producto.append(producto4)
+producto.append(producto5)
+
+campos = 5
+
+i = 0
+
+while i < campos:
+    valor = input("Ponga el campo a valer")
+    producto.append(valor)
+    i+=1
+
+
+encabezados = ("Id", "Nombre", "Precio", "Cantidad en mililitros", "Codigo postal")
+
+for encabezado in encabezados:
+        print(encabezado, end="\t")
+print()
+for item in producto:
+    print(item, end="\t")
